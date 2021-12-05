@@ -1,0 +1,301 @@
+<!-- content2docs print start -->
+<html><head><title>WinEditLine</title><meta name="WinEditLine, MinGWEditLine, editline, libedit, windows, open-source, free, BSD license">
+<meta name="description" content="A BSD-licensed EditLine API implementation for the native Windows Console">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><meta name="generator" content="CMSimple 3.2"><link rel="stylesheet" href="./templates/cmsimpleframes2/stylesheet.css" type="text/css"></head><body>
+<h1 style="display:none;">Home</h1><br>
+<p style="text-align: center;"><img src="./images/WinEditLine_home_banner_website.png"><br><br></p>
+<p style="text-align: center; font-size: 120%;">
+(formerly <B>MinGWEditLine</B>)</p>
+<p style="text-align: center; font-size: 180%;">
+A BSD-licensed EditLine API implementation<br>
+for the native Windows Console</p>
+<p style="text-align: center; font-size: 150%;">
+<a href="http://orcid.org/0000-0002-0034-9494" target="_blank">Paolo Tosco</a><sup><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x70;&#x61;&#x6f;&#x6c;&#x6f;&#x2e;&#x74;&#x6f;&#x73;&#x63;&#x6f;&#x2e;&#x6d;&#x61;&#x69;&#x6c;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;"><img src="./images/envelope.png" alt="*"></a></sup>
+<p style="text-align: center; font-size: 120%;">
+</p>
+<h1>Description</h1><br><br>
+<B>WinEditLine</B> (formerly MinGWEditLine) is a BSD-licensed, 
+open-source software aimed at implementing most of the functionality
+of the <a href="www.gnu.org/s/readline/">GNU Readline</a> library
+in the framework of the native Windows Console. In particular,
+the following functions are included in the <B>WinEditLine</B> API:
+<br><br>
+<ul>
+<code>
+<li>void source_editrc()</li>
+<li>char *readline(char *prompt)</li>
+<li>char **rl_completion_matches(const char *text, char *entry_func(const char *, int))</li>
+<li>char *rl_filename_completion_function(const char *text, int state)</li>
+<li>void rl_free(void *mem)</li>
+<li>int using_history()</li>
+<li>void free_history()</li>
+<li>void free_history_entry(HIST_ENTRY *entry)</li>
+<li>void clear_history()</li>
+<li>char *add_history(char *line)</li>
+<li>HIST_ENTRY *remove_history(int i)</li>
+<li>HIST_ENTRY *replace_history_entry(int i, char *line, histdata_t dummy)</li>
+<li>HIST_ENTRY **history_list()</li>
+<li>int where_history()</li>
+<li>int history_length()</li>
+<li>HIST_ENTRY *current_history()</li>
+<li>HIST_ENTRY *history_get(int offset)</li>
+<li>int history_set_pos(int i)</li>
+<li>HIST_ENTRY *previous_history()</li>
+<li>HIST_ENTRY *next_history()</li>
+<li>int read_history(const char *filename)</li>
+<li>int write_history(const char *filename)</li>
+<li>int append_history(int nelements, const char *filename)</li>
+<li>int history_truncate_file(const char *filename, int nlines)</li>
+</code>
+</ul><br><br>
+Please refer to the fully commented <a href="https://github.com/ptosco/wineditline">source code</a>
+for more detailed information.<br><br>
+For <B>WinEditLine</B> I have used an icon originally drawn by <a href="http://mattahan.deviantart.com/">Mattahan</a>, which is
+licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a> license.
+<h2>ChangeLog</h2><br><br>
+<ul><li>December 5, 2021: release of <B>WinEditLine</B> 2.207</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>added <code>rl_library_version</code>, <code>rl_end</code>, <code>rl_readline_version</code>
+from <code>php</code> branch (Thanks to Anatol Belski for the contribution)</li></ul></ul>
+<br>
+<ul><li>January 6, 2020: release of <B>WinEditLine</B> 2.206</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>added a missing <code>extern C</code> in <code>readline.h</code></li></ul></ul>
+<br>
+<ul><li>January 12, 2018: release of <B>WinEditLine</B> 2.205</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>fixed <a href="https://bugs.php.net/bug.php?id=75775">https://bugs.php.net/bug.php?id=75775</a>
+(Thanks to Anatol Belski for the report)</li></ul></ul>
+<br>
+<ul><li>December 12, 2017: release of <B>WinEditLine</B> 2.204</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>install <code>.pdb</code> files when building in <code>Debug</code> mode with MSVC</li></ul></ul>
+<br>
+<ul><li>November 20, 2017: release of <B>WinEditLine</B> 2.203</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>enable building with <code>C89</code> standard</li></ul></ul>
+<ul><ul><li>enable building with <code>MT</code> flag on MSVC</li></ul></ul>
+<br>
+<ul><li>May 11, 2017: release of <B>WinEditLine</B> 2.202</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>fixed <a href="https://bugs.php.net/bug.php?id=74490">https://bugs.php.net/bug.php?id=74490</a></li></ul></ul>
+<ul><ul><li>fixed <a href="https://bugs.php.net/bug.php?id=74489">https://bugs.php.net/bug.php?id=74489</a></li></ul></ul>
+<br>
+<ul><li>November 17, 2016: release of <B>WinEditLine</B> 2.201</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>all CR, LF characters are now stripped when redirecting input
+from a file or pipe (thanks to Paolo Vergano for reporting this)</li></ul></ul>
+<ul><ul><li>empty lines in redirected input do not cause <code>readline()</code> to
+return <code>NULL</code>, but <code>""</code> as it should</li></ul></ul>
+<br>
+<ul><li>November 13, 2016: release of <B>WinEditLine</B> 2.2</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>The length of lines is not limited to 4096 characters anymore</li></ul></ul>
+<ul><ul><li>Text can now be piped into <code>readline()</code> or read from a file
+(thanks to Paolo Vergano and Anatol Belski for reporting this)</li></ul></ul>
+<ul><ul><li>Implemented <code>append_history()</code> and <code>history_truncate_file()</code></li></ul></ul>
+<ul><ul><li>Cleaned up <code>editline/readline.h</code> to report only exposed functions</li></ul></ul>
+<ul><ul><li>The history file is now written with Windows <code>CR+LF</code> endings</li></ul></ul>
+<ul><ul><li>Both Unix and Windows line endings are accepted on input</li></ul></ul>
+<ul><ul><li><code>history_length()</code> now reports the correct history length (it used
+to report the actual length + 1)</li></ul></ul>
+<ul><ul><li><code>current_history()</code> now correctly reports the current history entry</li></ul></ul>
+<ul><ul><li><code>previous_history()</code> and <code>next_history()</code> do not allow going outside
+history boundaries</li></ul></ul>
+<ul><ul><li><code>where_history()</code> is now 1-based as in libedit/readline libraries</li></ul></ul>
+<ul><ul><li><code>set_current_pos()</code> is now 1-based as in libedit/readline libraries</li></ul></ul>
+<ul><ul><li>Fixed the DLL name in <code>libedit_test_dll.c</code></li></ul></ul>
+<br>
+<ul><li>April 12, 2014: release of <B>WinEditLine</B> 2.101</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li><code>CMakeLists.txt</code> was modified so that now both MinGW and MSVC
+compilers generate a DLL file with the same name (<code>edit.dll</code>);
+thanks to Peter Frentrup for suggesting this fix</li></ul></ul>
+<ul><ul><li>Fixed a bug in <code>readline()</code>: when <code>signal(SIGINT, SIG_IGN)</code> was used
+to ignore <code>CTRL+C</code>, WinEditLine crashed instead of returning <code>NULL</code>
+if <code>CTRL+C</code> was pressed at the beginning of the line (thanks to
+Peter Frentrup for reporting this)</li></ul></ul>
+<br>
+<ul><li>January 13, 2014: release of <B>WinEditLine</B> 2.1</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>Switched to CMake as build system</li></ul></ul>
+<ul><ul><li>Now the library can be built with both MinGW compilers and
+Microsoft Visual Studio compilers; this is the reason why
+the library has been renamed from MinGWEditLine to WinEditLine</li></ul></ul>
+<ul><ul><li>Added the <code>rl_free()</code> function to allow user programs freeing
+memory allocated in the library without causing a segmentation
+fault (see below)</li></ul></ul>
+<ul><ul><li>For the same reason, the <code>rl_user_completion_entry_free_function</code>
+symbol has been added. This pointer, if set by the user, should
+point to a user-defined function which takes a <code>void*</code> parameter
+and should simply call <code>free()</code> on the <code>void*</code> argument. This
+function is called by the library to free memory allocated by a
+user-defined custom completion function (if any)</li></ul></ul>
+<ul><ul><li>Freeing memory by calling <code>rl_free()</code> and the user-defined function
+pointed by <code>rl_user_completion_entry_free_function</code> instead of
+<code>free()</code> is mandatory whenever a) the user program links to the
+DLL instead of the static library and b) the DLL links to a
+different runtime compared to the user program (e.g., this
+happens if the user program is built with GCC and links to
+a MSVC-built DLL, or viceversa). The same issue has also led to
+the implementation of the <code>rl_free()</code> function in GNU Readline</li></ul></ul>
+<ul><ul><li>Added a few symbols which were not exported to the DLL</li></ul></ul>
+<ul><ul><li>Handling of quotes in filename completion is much improved</li></ul></ul>
+<br>
+<ul><li>June 20, 2012: release of <B>MinGWEditLine</B> 2.07</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>A blank line is not introduced anymore at the bottom of the
+console window</li></ul></ul>
+<br>
+<ul><li>June 19, 2012: release of <B>MinGWEditLine</B> 2.06</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>Improved redraw performance when dealing with large command
+lines</li></ul></ul>
+<ul><ul><li>Fixed a potential buffer overflow issue in displaying long
+history lines</li></ul></ul>
+<ul><ul><li>Fixed an issue which might arise in certain cases when using
+<code>CTRL+W</code> (delete-word)</li></ul></ul>
+<ul><ul><li>Switched from GNU <code>autotools</code> to standard GNU makefiles
+for both 32 and 64-bit platforms</li></ul></ul>
+<ul><ul><li>Added test programs which can be built by
+<code>make test</code></li></ul></ul>
+<ul><ul><li>In addition to the static library now a DLL is also built
+(thanks to Tim Hudson at <a href="http://www.cryptsoft.com/">CryptSoft</a>
+for the useful discussion)</li></ul></ul>
+<ul><ul><li>Most common emacs key bindings are now supported (again, thanks
+to Tim Hudson for the suggestion)</li></ul></ul>
+<br>
+<ul><li>June 13, 2012: release of <B>MinGWEditLine</B> 2.04</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>Fixed a number of issues which might arise using console windows
+with different screen buffer sizes</li></ul></ul>
+<ul><ul><li>Fixed an issue connected with pasting UNIX-encoded clipboard
+contents</li></ul></ul>
+<br>
+<ul><li>June 4, 2012: release of <B>MinGWEditLine</B> 2.02</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>Added synchronization between wide-char and multibyte strings in
+<code>_el_insert_char()</code> and <code>_el_delete_char()</code> to avoid potential issues
+with custom completing functions or signal handling functions</li></ul></ul>
+<br>
+<ul><li>June 2, 2012: release of <B>MinGWEditLine</B> 2.01</li></ul>
+<ul>Changes with respect to the previous version include:</ul>
+<ul><ul><li>Support for <code>rl_basic_word_break_characters[]</code> and
+<code>rl_completer_word_break_characters[]</code> variables</li></ul></ul>
+<ul><ul><li>Better handling of CTRL+C events (if the current line is not
+empty the function returns an empty string, otherwise CTRL+C is
+not intercepted)</li></ul></ul>
+<ul><ul><li>MinGWEditLine does not crash anymore if a program omits calling
+<code>using_history()</code> before calling history-related functions</li></ul></ul>
+<ul><ul><li>The prototype of <code>readline()</code> has been corrected to match
+GNU Readline's and EditLine's <code>readline()</code> prototypes</li></ul></ul>
+<ul><ul><li>Minor bugfixes</li></ul></ul>
+<br>
+<ul><li>May 21, 2012: release of <B>MinGWEditLine</B> 2.0</li></ul>
+<h1>License</h1><br><br>
+<B>WinEditLine</B><br><br>
+<I>
+A BSD-licensed EditLine API implementation<br>
+for the native Windows Console</I><br><br>
+Copyright &copy; 2010-2016
+<a href="http://orcid.org/0000-0002-0034-9494" target="_blank">Paolo Tosco</a><br>
+All rights reserved.<br>
+<br>
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:<br>
+<ul><li>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</ul></li>
+<ul><li>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.</ul></li>
+<ul><li>Neither the name of MinGWEditLine nor the name of its contributors may be
+used to endorse or promote products derived from this software
+without specific prior written permission.</ul></li>
+<br>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+<br><br><br>
+For further information, please contact:<br><br>
+<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x70;&#x61;&#x6f;&#x6c;&#x6f;&#x2e;&#x74;&#x6f;&#x73;&#x63;&#x6f;&#x40;&#x75;&#x6e;&#x69;&#x74;&#x6f;&#x2e;&#x69;&#x74;">Paolo Tosco, PhD</a></p>
+<h1>Downloads</h1><br><br>
+<B>WinEditLine</B> may be downloaded from
+<a href="https://github.com/ptosco/wineditline" target="_blank">GitHub</a>
+as a compressed archive which includes both source code and pre-built static/shared libraries
+for 32-bit and 64-bit <img src="images/icons/windows.png">Windows<br>
+<br>
+Alternatively, you may obtain the latest development code from the GitHub repository issuing
+the following command:
+<br><br><code>
+git clone https://github.com/ptosco/wineditline.git<br> 
+</code>
+<br><br>
+To build and install <B>WinEditLine</B>, do the following:
+<ol><li>
+From a MSYS/MinGW shell:<br><br>
+<code>cd</code> in the <code>WinEditLine</code> root folder, then issue the following commands:<br><br>
+<code>
+$ mkdir build<br>
+$ cd build<br>
+$ cmake -G"MSYS Makefiles" ..<br>
+$ make install<br>
+</code><br><br>
+</li>
+<li>
+From a Windows CMD shell:<br><br>
+<code>cd</code> in the <code>WinEditLine</code> root folder, then issue the following commands:<br><br>
+<code>
+C:\Users\ptosco&gt; mkdir build<br>
+C:\Users\ptosco&gt; cd build<br>
+</code><br>
+then, for a 32-bit build:<br><br>
+<code>
+C:\Users\ptosco&gt; cmake -G"Visual Studio 14" ..<br>
+C:\Users\ptosco&gt; c:\Windows\Microsoft.NET\Framework\v4.0.30319\^<br>
+MSBuild.exe /p:Configuration=Release INSTALL.vcxproj<br>
+</code><br>
+The path to the <code>MSBuild.exe</code> binary might vary depending on the
+installation on your system.
+</li></ol>
+<br>
+Static libraries are installed in the <code>lib32</code>, <code>lib64</code> folders, while
+DLLs and test programs are installed in the <code>bin32</code>, <code>bin64</code> folders;
+all these folders are located in the <code>WinEditLine</code> root directory.<br>
+<code>libedit_test.exe</code> and <code>libedit_test_dll.exe</code> are test programs which can
+be used to verify that both static and shared <code>libedit</code> versions have
+been built and work correctly.<br>
+<code>libedit_test_dll.c</code> is a nice, portable
+example contributed by Tim Hudson which shows how to build programs
+without introducing an explicit dependency from <code>libedit</code>: if the
+<code>libedit</code> shared library is installed in the system, then it will be
+loaded at runtime and used, otherwise the calling program will
+fall back on standard <code>fgets()</code>.<br>
+<code>libedit_test.c</code> is a standard example
+of static linking against <code>libedit_static.a</code>/<code>edit_static.lib</code>.
+<br><br>
+Pre-built static libraries and DLLs are provided for both 32 and
+64-bit Windows in the <code>lib32</code>, <code>lib64</code>, <code>bin32</code>, <code>bin64</code> folders.<br>
+Files whose name starts with <code>libedit</code> were built with MinGW
+compilers, while those starting with <code>edit</code> were built with
+MSVC 2015.
+<br><br>
+<B>WinEditLine</B> was successfully built on 32-bit and 64-bit
+&nbsp;<img src="images/icons/windows.png">&nbsp; Windows using:<br><br>
+<ul><li>
+<a href="https://www.visualstudio.com/downloads/" target="_blank">Microsoft Visual C++ 2015 Community</a>
+<br><br>
+</li><li>
+<a href="http://gcc.gnu.org/" target="_blank">GNU GCC</a>
+compilers version 5.3 retrieved from the
+<a href="http://msys2.github.io/" target="_blank">MSYS2 project</a>
+website.<br><br>
+</li></ul>
+</body></html>

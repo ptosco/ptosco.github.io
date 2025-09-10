@@ -7681,8 +7681,8 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div class="lm-Widget p-Widget jp-RenderedText jp-mod-trusted jp-OutputArea-output" id="2880c276-8cbd-11f0-bd1c-80e82cd30f44" tabindex="0">Loading rdkit-structure-renderer.js...</div><script type="module">
-const jsLoader = document.getElementById('2880c276-8cbd-11f0-bd1c-80e82cd30f44') || {};
+<div class="lm-Widget p-Widget jp-RenderedText jp-mod-trusted jp-OutputArea-output" id="f007398c-8e67-11f0-96f2-80e82cd30f44" tabindex="0">Loading rdkit-structure-renderer.js...</div><script type="module">
+const jsLoader = document.getElementById('f007398c-8e67-11f0-96f2-80e82cd30f44') || {};
 const setError = (e, resolve) => {
   jsLoader.innerHTML = (
     'Failed to load rdkit-structure-renderer.js:<br>' +
@@ -7762,7 +7762,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">DATA_ROOT_URL</span><span class="si">}</span><span class="s2">/Vertex_106_compounds.xlsx"</span><span class="p">)</span>
@@ -7785,16 +7785,90 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=60eb83bb-c0a4-4530-8897-0a29570acecf">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=60eb83bb-c0a4-4530-8897-0a29570acecf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Smiles string</th>
+<th>name</th>
+<th>type</th>
+<th>Exp. pka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>COc1c2c(cc(c1N3C[C@@H]4CCCN[C@@H]4C3)F)c(=O)c(...</td>
+<td>1</td>
+<td>acid</td>
+<td>6.3</td>
+</tr>
+<tr>
+<th>1</th>
+<td>COc1c2c(cc(c1N3C[C@@H]4CCCN[C@@H]4C3)F)c(=O)c(...</td>
+<td>1</td>
+<td>base</td>
+<td>9.3</td>
+</tr>
+<tr>
+<th>2</th>
+<td>CN1CCN(CC1)c2c(cc3c(c2F)n(cc(c3=O)C(=O)O)CCF)F</td>
+<td>2</td>
+<td>acid</td>
+<td>5.5</td>
+</tr>
+<tr>
+<th>3</th>
+<td>CN1CCN(CC1)c2c(cc3c(c2F)n(cc(c3=O)C(=O)O)CCF)F</td>
+<td>2</td>
+<td>base</td>
+<td>8.2</td>
+</tr>
+<tr>
+<th>4</th>
+<td>C[C@H]1COc2c3n1cc(c(=O)c3cc(c2N4CCN(CC4)C)F)C(...</td>
+<td>3</td>
+<td>acid</td>
+<td>6.0</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7815,7 +7889,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"Smiles string"</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"type"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"Exp. pka"</span><span class="p">)</span>
@@ -7826,16 +7900,90 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=895ba2f4-23ed-484a-b73a-d725ded4d0c2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=895ba2f4-23ed-484a-b73a-d725ded4d0c2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Smiles string</th>
+<th>name</th>
+<th>Exp pKa A</th>
+<th>Exp pKa B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>C1CCN(C1)CC#CCN2CCCC2=O</td>
+<td>54</td>
+<td>NaN</td>
+<td>8.40</td>
+</tr>
+<tr>
+<th>1</th>
+<td>C=CC1=C(N2[C@@H]([C@@H](C2=O)NC(=O)/C(=N\O)/c3...</td>
+<td>14</td>
+<td>3.35</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>2</th>
+<td>CC(C(=O)c1cccc(c1)Cl)NC(C)(C)C</td>
+<td>56</td>
+<td>NaN</td>
+<td>8.20</td>
+</tr>
+<tr>
+<th>3</th>
+<td>CC(C)(C)C#C/C=C/CN(C)Cc1cccc2c1cccc2</td>
+<td>57</td>
+<td>NaN</td>
+<td>7.12</td>
+</tr>
+<tr>
+<th>4</th>
+<td>CC(C)(C)c1ccc(cc1)C(CCCN2CCC(CC2)C(c3ccccc3)(c...</td>
+<td>58</td>
+<td>NaN</td>
+<td>8.50</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7856,7 +8004,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">smi_list</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Smiles string"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">smi</span><span class="p">:</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(((</span><span class="s2">"smiles"</span><span class="p">,</span> <span class="n">smi</span><span class="p">),)))</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
@@ -7870,7 +8018,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">PUG_REST_API_BASE_URL</span> <span class="o">=</span> <span class="s2">"https://pubchem.ncbi.nlm.nih.gov/rest/pug"</span>
@@ -7884,7 +8032,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">session</span><span class="p">()</span>
@@ -7898,7 +8046,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
@@ -7926,7 +8074,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cid_status_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -7948,7 +8096,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">cid</span> <span class="k">for</span> <span class="n">cid</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">cid_status_list</span><span class="p">)</span>
@@ -7962,7 +8110,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cids</span> <span class="o">=</span> <span class="p">[</span><span class="n">cid</span> <span class="k">for</span> <span class="n">cid</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">cid_status_list</span><span class="p">]</span>
@@ -7971,16 +8119,28 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=17dfa9e8-0e00-4705-9f35-376c87b181c1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=17dfa9e8-0e00-4705-9f35-376c87b181c1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">cids</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>106</pre>
 </div>
 </div>
 </div>
@@ -8001,7 +8161,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">titles</span> <span class="o">=</span> <span class="p">[]</span>
@@ -8026,7 +8186,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">titles</span><span class="p">)</span>
@@ -8041,7 +8201,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">"PubChem CID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">cids</span>
@@ -8067,7 +8227,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="s2">"Vertex_106_compounds.pkl"</span><span class="p">)</span>
@@ -8092,7 +8252,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">"Vertex_106_compounds.pkl"</span><span class="p">):</span>
@@ -8123,7 +8283,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">"ROMol"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Smiles string"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">Chem</span><span class="o">.</span><span class="n">MolFromSmiles</span><span class="p">)</span>
@@ -8132,6 +8292,145 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <span class="n">df</span><span class="p">[</span><span class="s2">"ROMol"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Smiles string"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">Chem</span><span class="o">.</span><span class="n">MolFromSmiles</span><span class="p">)</span>
 <span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">"ROMol"</span><span class="p">])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=40990083-6dca-454f-a43a-80b60ec8036b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We call the familiar <code>PandasTools.RenderImagesInAllDataFrames()</code> to render molecules in the <code>DataFrame</code> as images, but since earlier we enabled interactive rendering, we will have interactive HTML5 objects rather than static images:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4a119afb-98d5-448f-afa9-293e0d515e19">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">PandasTools</span><span class="o">.</span><span class="n">RenderImagesInAllDataFrames</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2ebf821a-7939-4951-8be3-0b0d68b19367">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Smiles string</th>
+<th>name</th>
+<th>Exp pKa A</th>
+<th>Exp pKa B</th>
+<th>PubChem CID</th>
+<th>PubChem title</th>
+<th>ROMol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>O=C1CCCN1CC#CCN1CCCC1</td>
+<td>54</td>
+<td>NaN</td>
+<td>8.40</td>
+<td>4630</td>
+<td>Oxotremorine</td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAPAAAAEAAAAIABCAAoAAAAAwIGACgAAAADBAYAYAAAAAICBgBgAAAAAgIGAGAAAAACAgcAKAAAAAMDBgBgAAAAAgIGACgAAAACBAYAKAAAAAIEBgBgAAAAAgIHACAAAAADBgBgAAAAAgIGAGAAAAACAgYAYAAAAAICBgBgAAAAAgILAAEoAgECAAIDAAMEAAQFAAUGAAYHAAcICAMICQAJCgAKCwALDAAMDQANDgAFASAOCgBCAgAAAAUBAgMEBQULCg4NDBcJAAAAAAAAAD8AAAAAEgIAAAAAABMW" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="200" id="rdk-str-rnr-mol-4449151a-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
+</tr>
+<tr>
+<th>1</th>
+<td>C=CC1=C(C(=O)O)N2C(=O)[C@@H](NC(=O)/C(=N\O)c3c...</td>
+<td>14</td>
+<td>3.35</td>
+<td>NaN</td>
+<td>6915944</td>
+<td>Cefdinir</td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAaAAAAHAAAAIABBgBoAAAAAwICBgBoAAAAAwMBBgAoAAAAAwQGACgAAAADBAYAKAAAAAMECAAoAAAAAwIIAGgAAAADAQEHACgAAAADAwYAKAAAAAMECAAoAAAAAwIGIDQAAAABAQQHAGgAAAADAgEGACgAAAADBAgAKAAAAAMCBgAoAAAAAwQHACgAAAADAwgAaAAAAAMBAQZAKAAAAAMEBkBoAAAAAwMBEEAoAAAAAwIGQCgAAAADBAcAaAAAAAMBAgdAKAAAAAMDBiA0AAAAAQEEEAAgAAAAAgYAYAAAAAICCwABKAIBAiACAygCAwQgBAUoAgQGIAMHIAcIIAgJKAIICgAKCwALDCAMDSgCDA4kBA4PKgICAgwQDxAkAw4RIBESaAwSE2gMExRoDBQVIBQWaAwKFwAXGAAYGQAZAgAXBwAWEWgMQgMAAAAGAhkYFwcDBAgKFwcFEhEWFBMXCQAAAAAAAAA/AAAAABICAAAAAAATOnYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAABfQ0lQQ29kZQABAAAAUggBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAF9DSVBDb2RlAAEAAABSCAEAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="200" id="rdk-str-rnr-mol-444967ea-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
+</tr>
+<tr>
+<th>2</th>
+<td>CC(NC(C)(C)C)C(=O)c1cccc(Cl)c1</td>
+<td>56</td>
+<td>NaN</td>
+<td>8.20</td>
+<td>444</td>
+<td>Bupropion</td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAQAAAAEAAAAIABBgBgAAAAAQMGAGAAAAADAQcAYAAAAAIBBgAgAAAABAYAYAAAAAEDBgBgAAAAAQMGAGAAAAABAwYAKAAAAAMECAAoAAAAAwIGQCgAAAADBAZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAKAAAAAMEEQAgAAAAAQZAaAAAAAMDAQsAAQABAgACAwADBAADBQADBgABBwAHCCgCBwkgCQpoDAoLaAwLDGgMDA1oDA0OAA0PaAwPCWgMQgEAAAAGCQ8NDAsKFwkAAAAAAAAAPwAAAAASAgAAAAAAEzoyAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATFg==" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="200" id="rdk-str-rnr-mol-44499198-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
+</tr>
+<tr>
+<th>3</th>
+<td>CN(C/C=C/C#CC(C)(C)C)Cc1cccc2ccccc12</td>
+<td>57</td>
+<td>NaN</td>
+<td>7.12</td>
+<td>1549008</td>
+<td>Terbinafine</td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAWAAAAFwAAAIABBgBgAAAAAQMHACAAAAADBgBgAAAAAgIGAGgAAAADAwEGAGgAAAADAwEGACgAAAACBAYAKAAAAAIEBgAgAAAABAYAYAAAAAEDBgBgAAAAAQMGAGAAAAABAwYAYAAAAAICBkAoAAAAAwQGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQCgAAAADBAZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAKAAAAAMECwABAAECAAIDBAQDBCoCAwICBQQFJAQFBigDBgcABwgABwkABwoAAQsACwwADA1oDA0OaAwOD2gMDxBoDBARaAwREmgMEhNoDBMUaAwUFWgMFQxoDBUQaAxCAgAAAAYMFRAPDg0GERITFBUQFwkAAAAAAAAAPwAAAAASAgAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="200" id="rdk-str-rnr-mol-4449b9c0-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
+</tr>
+<tr>
+<th>4</th>
+<td>CC(C)(C)c1ccc(C(O)CCCN2CCC(C(O)(c3ccccc3)c3ccc...</td>
+<td>58</td>
+<td>NaN</td>
+<td>8.50</td>
+<td>5405</td>
+<td>Terfenadine</td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAjAAAAJgAAAIABBgBgAAAAAQMGACAAAAAEBgBgAAAAAQMGAGAAAAABAwZAKAAAAAMEBkBoAAAAAwMBBkBoAAAAAwMBBkAoAAAAAwQGAGAAAAADAQgAYAAAAAEBBgBgAAAAAgIGAGAAAAACAgYAYAAAAAICBwAgAAAAAwYAYAAAAAICBgBgAAAAAgIGAGAAAAADAQYAIAAAAAQIAGAAAAABAQZAKAAAAAMEBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkAoAAAAAwQGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGAGAAAAACAgYAYAAAAAICBkBoAAAAAwMBBkBoAAAAAwMBCwABAAECAAEDAAEEAAQFaAwFBmgMBgdoDAcIAAgJAAgKAAoLAAsMAAwNAA0OAA4PAA8QABARABESABETABMUaAwUFWgMFRZoDBYXaAwXGGgMERkAGRpoDBobaAwbHGgMHB1oDB0eaAwQHwAfIAAHIWgMISJoDCIEaAwgDQAYE2gMHhloDEIEAAAABgQiIQcGBQYODxAfIA0GFBUWFxgTBhobHB0eGRcJAAAAAAAAAD8AAAAAEgIAAAAAABM6awAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="200" id="rdk-str-rnr-mol-4449e5ee-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
+</tr>
+</tbody>
+</table>
+<script type="module">if (window.rdkStrRnr) {
+  window.rdkStrRnr.then(
+    function(Renderer) {
+      if (Renderer) {
+        Renderer.updateMolDrawDivs();
+      }
+    }
+  ).catch();
+}</script></div>
 </div>
 </div>
 </div>
@@ -8152,7 +8451,7 @@ Otherwise feel free to skip to the <b>Read pickled DataFrame</b> section.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">PandasTools</span><span class="o">.</span><span class="n">WriteSDF</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s2">"Vertex_106_compounds.sdf"</span><span class="p">,</span> <span class="s2">"ROMol"</span><span class="p">,</span> <span class="s2">"PubChem title"</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
@@ -8179,25 +8478,10 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">MAX_MOKA_PKA</span> <span class="o">=</span> <span class="mi">3</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=552f5c5b-67ae-4da6-ac25-de6641336483">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>module<span class="w"> </span>load<span class="w"> </span>MoKa<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="err">\</span>
-    <span class="n">moka_cli</span> <span class="o">--</span><span class="nb">input</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="n">sd</span> <span class="o">--</span><span class="n">output</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="n">txt</span> <span class="o">--</span><span class="n">sd</span><span class="o">-</span><span class="n">field</span><span class="o">=</span>\<span class="s2">"PubChem title</span><span class="se">\"</span><span class="s2"> --acid-values=</span><span class="si">{MAX_MOKA_PKA}</span>
 </pre></div>
 </div>
 </div>
@@ -8208,7 +8492,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>module<span class="w"> </span>load<span class="w"> </span>MoKa<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="err">\</span>
@@ -8237,7 +8521,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">"Vertex_106_compounds_moka.txt"</span><span class="p">):</span>
@@ -8269,7 +8553,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">all</span><span class="p">(</span><span class="n">moka_results</span><span class="p">)</span>
@@ -8296,7 +8580,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">moka_results</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
@@ -8310,7 +8594,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>['Oxotremorine 0 - 1 b 7.95 11 0.61 \n',
  'Cefdinir 0 - 4 a 2.64 7 0.34 a 9.90 17 0.44 a 14.94 12 0.20 b 3.22 23 0.59 \n',
@@ -8335,7 +8619,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MokaPrediction</span><span class="p">:</span>
@@ -8357,7 +8641,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MokaAtom</span><span class="p">:</span>
@@ -8457,7 +8741,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">MokaMol</span><span class="p">:</span>
@@ -8573,7 +8857,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">mol_idx</span><span class="p">,</span> <span class="n">moka_result</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">moka_results</span><span class="p">):</span>
@@ -8583,31 +8867,6 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
         <span class="n">exp_pka</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">mol_idx</span><span class="p">][</span><span class="sa">f</span><span class="s2">"Exp pKa </span><span class="si">{</span><span class="n">pka_type</span><span class="si">}</span><span class="s2">"</span><span class="p">]</span>
         <span class="n">moka_mol</span><span class="o">.</span><span class="n">set_exp_pka</span><span class="p">(</span><span class="n">exp_pka</span><span class="p">,</span> <span class="n">pka_type</span><span class="p">)</span>
     <span class="n">moka_mol</span><span class="o">.</span><span class="n">setup_mol_for_pka_visualization</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3d5a6102-2c27-4be0-a474-eeb6975687b5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We call the familiar <code>PandasTools.RenderImagesInAllDataFrames()</code> to render molecules in the <code>DataFrame</code> as images, but since earlier we enabled interactive rendering, we will have interactive HTML5 objects rather than static images:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=344bbf02-2e3e-471f-a11d-c7d3be20c224">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">PandasTools</span><span class="o">.</span><span class="n">RenderImagesInAllDataFrames</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8629,7 +8888,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_show</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"Smiles string"</span><span class="p">,</span> <span class="s2">"name"</span><span class="p">,</span> <span class="s2">"Exp pKa A"</span><span class="p">,</span> <span class="s2">"Exp pKa B"</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"PubChem title"</span><span class="p">)</span>
@@ -8654,7 +8913,7 @@ We compute a maximum of 3 acidic and 3 basic pKa values:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">IPythonConsole</span><span class="o">.</span><span class="n">molSize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
@@ -8681,7 +8940,7 @@ You should be able to see pKa tooltips hovering on the highlighted atoms.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_show</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8695,7 +8954,7 @@ You should be able to see pKa tooltips hovering on the highlighted atoms.</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style>
@@ -8728,27 +8987,27 @@ You should be able to see pKa tooltips hovering on the highlighted atoms.</p>
 <tr>
 <th>Oxotremorine</th>
 <td>4630</td>
-<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"10": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7.95 &amp;plusmn; 0.61&lt;/td&gt;&lt;td&gt;8.40&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"10":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"10":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAPAAAAEAAAAIABCAAoAAAAAwIGACgAAAADBAYAYAAAAAICBgBgAAAAAgIGAGAAAAACAgcAKAAAAAMDBgBgAAAAAgIGACgAAAACBAYAKAAAAAIEBgBgAAAAAgIHACAAAAADBgBgAAAAAgIGAGAAAAACAgYAYAAAAAICBgBgAAAAAgILAAEoAgECAAIDAAMEAAQFAAUGAAYHAAcICAMICQAJCgAKCwALDAAMDQANDgAFASAOCgBCAgAAAAUBAgMEBQULCg4NDBcJAAAAAAAAAD8AAAAAEgIAAAAAABM6QgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAA3Ljk1AAAAAAAAAAAAAAAAABMW" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-3830e4f8-8cbd-11f0-bd1c-80e82cd30f44" style="margin: auto;"></div></td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"10": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7.95 &amp;plusmn; 0.61&lt;/td&gt;&lt;td&gt;8.40&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"10":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"10":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAPAAAAEAAAAIABCAAoAAAAAwIGACgAAAADBAYAYAAAAAICBgBgAAAAAgIGAGAAAAACAgcAKAAAAAMDBgBgAAAAAgIGACgAAAACBAYAKAAAAAIEBgBgAAAAAgIHACAAAAADBgBgAAAAAgIGAGAAAAACAgYAYAAAAAICBgBgAAAAAgILAAEoAgECAAIDAAMEAAQFAAUGAAYHAAcICAMICQAJCgAKCwALDAAMDQANDgAFASAOCgBCAgAAAAUBAgMEBQULCg4NDBcJAAAAAAAAAD8AAAAAEgIAAAAAABM6QgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAA3Ljk1AAAAAAAAAAAAAAAAABMW" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-6d4e2b94-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
 </tr>
 <tr>
 <th>Cefdinir</th>
 <td>6915944</td>
-<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"6": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #febfb8;\"&gt;&lt;td&gt;&lt;b&gt;A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2.64 &amp;plusmn; 0.34&lt;/td&gt;&lt;td&gt;3.35&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;", "16": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #febfb8;\"&gt;&lt;td&gt;&lt;b&gt;A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;9.90 &amp;plusmn; 0.44&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;", "22": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3.22 &amp;plusmn; 0.59&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"6":[[0.996078431372549,0.7490196078431373,0.7215686274509804]],"16":[[0.996078431372549,0.7490196078431373,0.7215686274509804]],"22":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"6":0.4,"16":0.4,"22":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAaAAAAHAAAAIABBgBoAAAAAwICBgBoAAAAAwMBBgAoAAAAAwQGACgAAAADBAYAKAAAAAMECAAoAAAAAwIIAGgAAAADAQEHACgAAAADAwYAKAAAAAMECAAoAAAAAwIGIDQAAAABAQQHAGgAAAADAgEGACgAAAADBAgAKAAAAAMCBgAoAAAAAwQHACgAAAADAwgAaAAAAAMBAQZAKAAAAAMEBkBoAAAAAwMBEEAoAAAAAwIGQCgAAAADBAcAaAAAAAMBAgdAKAAAAAMDBiA0AAAAAQEEEAAgAAAAAgYAYAAAAAICCwABKAIBAiACAygCAwQgBAUoAgQGIAMHIAcIIAgJKAIICgAKCwALDCAMDSgCDA4kBA4PKgICAgwQDxAkAw4RIBESaAwSE2gMExRoDBQVIBQWaAwKFwAXGAAYGQAZAgAXBwAWEWgMQgMAAAAGAhkYFwcDBAgKFwcFEhEWFBMXCQAAAAAAAAA/AAAAABICAAAAAAATOrUAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAABhdG9tTm90ZQAEAAAAMi42NAAAAAAAAAAAAAABAAgAAABfQ0lQQ29kZQABAAAAUggBAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAA5LjkwAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAAzLjIyAAEACAAAAF9DSVBDb2RlAAEAAABSCAEAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-383112ca-8cbd-11f0-bd1c-80e82cd30f44" style="margin: auto;"></div></td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"6": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #febfb8;\"&gt;&lt;td&gt;&lt;b&gt;A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;2.64 &amp;plusmn; 0.34&lt;/td&gt;&lt;td&gt;3.35&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;", "16": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #febfb8;\"&gt;&lt;td&gt;&lt;b&gt;A&lt;/b&gt;&lt;/td&gt;&lt;td&gt;9.90 &amp;plusmn; 0.44&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;", "22": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;3.22 &amp;plusmn; 0.59&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"6":[[0.996078431372549,0.7490196078431373,0.7215686274509804]],"16":[[0.996078431372549,0.7490196078431373,0.7215686274509804]],"22":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"6":0.4,"16":0.4,"22":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAaAAAAHAAAAIABBgBoAAAAAwICBgBoAAAAAwMBBgAoAAAAAwQGACgAAAADBAYAKAAAAAMECAAoAAAAAwIIAGgAAAADAQEHACgAAAADAwYAKAAAAAMECAAoAAAAAwIGIDQAAAABAQQHAGgAAAADAgEGACgAAAADBAgAKAAAAAMCBgAoAAAAAwQHACgAAAADAwgAaAAAAAMBAQZAKAAAAAMEBkBoAAAAAwMBEEAoAAAAAwIGQCgAAAADBAcAaAAAAAMBAgdAKAAAAAMDBiA0AAAAAQEEEAAgAAAAAgYAYAAAAAICCwABKAIBAiACAygCAwQgBAUoAgQGIAMHIAcIIAgJKAIICgAKCwALDCAMDSgCDA4kBA4PKgICAgwQDxAkAw4RIBESaAwSE2gMExRoDBQVIBQWaAwKFwAXGAAYGQAZAgAXBwAWEWgMQgMAAAAGAhkYFwcDBAgKFwcFEhEWFBMXCQAAAAAAAAA/AAAAABICAAAAAAATOrUAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAABhdG9tTm90ZQAEAAAAMi42NAAAAAAAAAAAAAABAAgAAABfQ0lQQ29kZQABAAAAUggBAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAA5LjkwAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAAzLjIyAAEACAAAAF9DSVBDb2RlAAEAAABSCAEAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-6d4e574a-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
 </tr>
 <tr>
 <th>Bupropion</th>
 <td>444</td>
-<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"2": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7.88 &amp;plusmn; 0.62&lt;/td&gt;&lt;td&gt;8.20&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"2":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"2":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAQAAAAEAAAAIABBgBgAAAAAQMGAGAAAAADAQcAYAAAAAIBBgAgAAAABAYAYAAAAAEDBgBgAAAAAQMGAGAAAAABAwYAKAAAAAMECAAoAAAAAwIGQCgAAAADBAZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAKAAAAAMEEQAgAAAAAQZAaAAAAAMDAQsAAQABAgACAwADBAADBQADBgABBwAHCCgCBwkgCQpoDAoLaAwLDGgMDA1oDA0OAA0PaAwPCWgMQgEAAAAGCQ8NDAsKFwkAAAAAAAAAPwAAAAASAgAAAAAAEzpHAAAAAAAAAAAIAQABAAgAAABhdG9tTm90ZQAEAAAANy44OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATFg==" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-38312eae-8cbd-11f0-bd1c-80e82cd30f44" style="margin: auto;"></div></td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"2": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;7.88 &amp;plusmn; 0.62&lt;/td&gt;&lt;td&gt;8.20&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"2":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"2":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAQAAAAEAAAAIABBgBgAAAAAQMGAGAAAAADAQcAYAAAAAIBBgAgAAAABAYAYAAAAAEDBgBgAAAAAQMGAGAAAAABAwYAKAAAAAMECAAoAAAAAwIGQCgAAAADBAZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAKAAAAAMEEQAgAAAAAQZAaAAAAAMDAQsAAQABAgACAwADBAADBQADBgABBwAHCCgCBwkgCQpoDAoLaAwLDGgMDA1oDA0OAA0PaAwPCWgMQgEAAAAGCQ8NDAsKFwkAAAAAAAAAPwAAAAASAgAAAAAAEzpHAAAAAAAAAAAIAQABAAgAAABhdG9tTm90ZQAEAAAANy44OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATFg==" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-6d4e73b0-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
 </tr>
 <tr>
 <th>Terbinafine</th>
 <td>1549008</td>
-<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"1": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;6.99 &amp;plusmn; 0.61&lt;/td&gt;&lt;td&gt;7.12&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"1":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"1":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAWAAAAFwAAAIABBgBgAAAAAQMHACAAAAADBgBgAAAAAgIGAGgAAAADAwEGAGgAAAADAwEGACgAAAACBAYAKAAAAAIEBgAgAAAABAYAYAAAAAEDBgBgAAAAAQMGAGAAAAABAwYAYAAAAAICBkAoAAAAAwQGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQCgAAAADBAZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAKAAAAAMECwABAAECAAIDBAQDBCoCAwICBQQFJAQFBigDBgcABwgABwkABwoAAQsACwwADA1oDA0OaAwOD2gMDxBoDBARaAwREmgMEhNoDBMUaAwUFWgMFQxoDBUQaAxCAgAAAAYMFRAPDg0GERITFBUQFwkAAAAAAAAAPwAAAAASAgAAAAAAEzpXAAAAAAAAAQAIAAAAYXRvbU5vdGUABAAAADYuOTkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-38314d80-8cbd-11f0-bd1c-80e82cd30f44" style="margin: auto;"></div></td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"1": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;6.99 &amp;plusmn; 0.61&lt;/td&gt;&lt;td&gt;7.12&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"1":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"1":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAWAAAAFwAAAIABBgBgAAAAAQMHACAAAAADBgBgAAAAAgIGAGgAAAADAwEGAGgAAAADAwEGACgAAAACBAYAKAAAAAIEBgAgAAAABAYAYAAAAAEDBgBgAAAAAQMGAGAAAAABAwYAYAAAAAICBkAoAAAAAwQGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQCgAAAADBAZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAaAAAAAMDAQZAKAAAAAMECwABAAECAAIDBAQDBCoCAwICBQQFJAQFBigDBgcABwgABwkABwoAAQsACwwADA1oDA0OaAwOD2gMDxBoDBARaAwREmgMEhNoDBMUaAwUFWgMFQxoDBUQaAxCAgAAAAYMFRAPDg0GERITFBUQFwkAAAAAAAAAPwAAAAASAgAAAAAAEzpXAAAAAAAAAQAIAAAAYXRvbU5vdGUABAAAADYuOTkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-6d4e8bf2-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
 </tr>
 <tr>
 <th>Terfenadine</th>
 <td>5405</td>
-<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"13": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8.93 &amp;plusmn; 0.61&lt;/td&gt;&lt;td&gt;8.50&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"13":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"13":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAjAAAAJgAAAIABBgBgAAAAAQMGACAAAAAEBgBgAAAAAQMGAGAAAAABAwZAKAAAAAMEBkBoAAAAAwMBBkBoAAAAAwMBBkAoAAAAAwQGAGAAAAADAQgAYAAAAAEBBgBgAAAAAgIGAGAAAAACAgYAYAAAAAICBwAgAAAAAwYAYAAAAAICBgBgAAAAAgIGAGAAAAADAQYAIAAAAAQIAGAAAAABAQZAKAAAAAMEBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkAoAAAAAwQGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGAGAAAAACAgYAYAAAAAICBkBoAAAAAwMBBkBoAAAAAwMBCwABAAECAAEDAAEEAAQFaAwFBmgMBgdoDAcIAAgJAAgKAAoLAAsMAAwNAA0OAA4PAA8QABARABESABETABMUaAwUFWgMFRZoDBYXaAwXGGgMERkAGRpoDBobaAwbHGgMHB1oDB0eaAwQHwAfIAAHIWgMISJoDCIEaAwgDQAYE2gMHhloDEIEAAAABgQiIQcGBQYODxAfIA0GFBUWFxgTBhobHB0eGRcJAAAAAAAAAD8AAAAAEgIAAAAAABM6gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAQAIAAAAYXRvbU5vdGUABAAAADguOTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-383166da-8cbd-11f0-bd1c-80e82cd30f44" style="margin: auto;"></div></td>
+<td style="text-align: center;"><div class="rdk-str-rnr-mol-container" data-atom-tooltips='{"13": "&lt;style&gt;.rdk-str-rnr-tooltip .atom {\n    table {\n        border-collapse: collapse;\n    }\n    th, td {\n        white-space: nowrap;\n        text-align: center;\n        padding-left:5px;\n        padding-right:5px;\n        font-size:1.2em;\n    }\n}&lt;/style&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;MoKa &amp;plusmn; SD&lt;/th&gt;&lt;th&gt;Exp&lt;/th&gt;&lt;/thead&gt;&lt;tr style=\"background-color: #b1d5e7;\"&gt;&lt;td&gt;&lt;b&gt;B&lt;/b&gt;&lt;/td&gt;&lt;td&gt;8.93 &amp;plusmn; 0.61&lt;/td&gt;&lt;td&gt;8.50&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;"}' data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale":0.7,"baseFontSize":1.0,"bondLineWidth":0.7,"dummyIsotopeLabels":false,"fixedScale":0.08,"highlightBondWidthMultiplier":20,"maxFontSize":-1,"minFontSize":-1,"multipleBondOffset":0.25,"standardColoursForHighlightedAtoms":true,"highlightAtomMultipleColors":{"13":[[0.6941176470588235,0.8352941176470589,0.9058823529411765]]},"highlightAtomRadii":{"13":0.4}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAjAAAAJgAAAIABBgBgAAAAAQMGACAAAAAEBgBgAAAAAQMGAGAAAAABAwZAKAAAAAMEBkBoAAAAAwMBBkBoAAAAAwMBBkAoAAAAAwQGAGAAAAADAQgAYAAAAAEBBgBgAAAAAgIGAGAAAAACAgYAYAAAAAICBwAgAAAAAwYAYAAAAAICBgBgAAAAAgIGAGAAAAADAQYAIAAAAAQIAGAAAAABAQZAKAAAAAMEBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkBoAAAAAwMBBkAoAAAAAwQGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGQGgAAAADAwEGAGAAAAACAgYAYAAAAAICBkBoAAAAAwMBBkBoAAAAAwMBCwABAAECAAEDAAEEAAQFaAwFBmgMBgdoDAcIAAgJAAgKAAoLAAsMAAwNAA0OAA4PAA8QABARABESABETABMUaAwUFWgMFRZoDBYXaAwXGGgMERkAGRpoDBobaAwbHGgMHB1oDB0eaAwQHwAfIAAHIWgMISJoDCIEaAwgDQAYE2gMHhloDEIEAAAABgQiIQcGBQYODxAfIA0GFBUWFxgTBhobHB0eGRcJAAAAAAAAAD8AAAAAEgIAAAAAABM6gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAAAQAIAAAAYXRvbU5vdGUABAAAADguOTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-6d4ea722-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td>
 </tr>
 </tbody>
 </table>
@@ -8781,7 +9040,7 @@ You should be able to see pKa tooltips hovering on the highlighted atoms.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">AtomBondSelection</span><span class="p">:</span>
@@ -8900,7 +9159,7 @@ You should be able to see pKa tooltips hovering on the highlighted atoms.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">atom_bond_selection</span> <span class="o">=</span> <span class="n">AtomBondSelection</span><span class="p">(</span><span class="n">df_show</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"Cefdinir"</span><span class="p">]</span><span class="o">.</span><span class="n">ROMol</span><span class="p">)</span>
@@ -8926,7 +9185,7 @@ Atoms and bonds can be selected by mouse clicks...</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">atom_bond_selection</span>
@@ -8942,19 +9201,20 @@ Atoms and bonds can be selected by mouse clicks...</p>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Text(value='', layout=Layout(display='None'), _dom_classes=('jp-atom-selection-71c2e048-8e68-11f0-96f2-80e82cd…</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <?xml version="1.0" ?><div><table><tbody><tr><td style="width: 300px; height: 200px; text-align: center;"><script>(function() {
     const tid = setInterval(function() {
         try {
-            const jpAtomSel = document.getElementsByClassName('jp-atom-selection-3a20744a-8cbd-11f0-bd1c-80e82cd30f44');
+            const jpAtomSel = document.getElementsByClassName('jp-atom-selection-71c2e048-8e68-11f0-96f2-80e82cd30f44');
             if (jpAtomSel.length !== 1) return;
             const input = jpAtomSel[0].querySelector('input');
             if (!input) return;
-            const molDiv = document.getElementById('rdk-str-rnr-mol-3abe0688-8cbd-11f0-bd1c-80e82cd30f44');
+            const molDiv = document.getElementById('rdk-str-rnr-mol-72429b1c-8e68-11f0-96f2-80e82cd30f44');
             if (!molDiv) return;
             const r = RDKitStructureRenderer;
             const divId = r.getDivId(molDiv);
@@ -8973,7 +9233,7 @@ Atoms and bonds can be selected by mouse clicks...</p>
         }
     }, 10);
 })();
-</script><div class="rdk-str-rnr-mol-container" data-atom-selection="" data-bond-selection="" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale": 0.7, "baseFontSize": 1.0, "bondLineWidth": 0.7, "dummyIsotopeLabels": false, "fixedScale": 0.08, "highlightBondWidthMultiplier": 20, "maxFontSize": -1, "minFontSize": -1, "multipleBondOffset": 0.25, "standardColoursForHighlightedAtoms": true, "drawingExtentsInclude": {"ALL": true, "HIGHLIGHTS": false}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAaAAAAHAAAAIABBgBoAAAAAwICBgBoAAAAAwMBBgAoAAAAAwQGACgAAAADBAYAKAAAAAMECAAoAAAAAwIIAGgAAAADAQEHACgAAAADAwYAKAAAAAMECAAoAAAAAwIGIDQAAAABAQQHAGgAAAADAgEGACgAAAADBAgAKAAAAAMCBgAoAAAAAwQHACgAAAADAwgAaAAAAAMBAQZAKAAAAAMEBkBoAAAAAwMBEEAoAAAAAwIGQCgAAAADBAcAaAAAAAMBAgdAKAAAAAMDBiA0AAAAAQEEEAAgAAAAAgYAYAAAAAICCwABKAIBAiACAygCAwQgBAUoAgQGIAMHIAcIIAgJKAIICgAKCwALDCAMDSgCDA4kBA4PKgICAgwQDxAkAw4RIBESaAwSE2gMExRoDBQVIBQWaAwKFwAXGAAYGQAZAgAXBwAWEWgMQgMAAAAGAhkYFwcDBAgKFwcFEhEWFBMXCQAAAAAAAAA/AAAAABICAAAAAAATOrUAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAABhdG9tTm90ZQAEAAAAMi42NAAAAAAAAAAAAAABAAgAAABfQ0lQQ29kZQABAAAAUggBAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAA5LjkwAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAAzLjIyAAEACAAAAF9DSVBDb2RlAAEAAABSCAEAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-3abe0688-8cbd-11f0-bd1c-80e82cd30f44" style="margin: auto;"></div></td></tr></tbody></table><script type="module">if (window.rdkStrRnr) {
+</script><div class="rdk-str-rnr-mol-container" data-atom-selection="" data-bond-selection="" data-content="rdkit/molecule" data-draw-opts='{"annotationFontScale": 0.7, "baseFontSize": 1.0, "bondLineWidth": 0.7, "dummyIsotopeLabels": false, "fixedScale": 0.08, "highlightBondWidthMultiplier": 20, "maxFontSize": -1, "minFontSize": -1, "multipleBondOffset": 0.25, "standardColoursForHighlightedAtoms": true, "drawingExtentsInclude": {"ALL": true, "HIGHLIGHTS": false}}' data-height="200" data-mol="pkl_776t3gAAAAAQAAAAAgAAAAAAAAAaAAAAHAAAAIABBgBoAAAAAwICBgBoAAAAAwMBBgAoAAAAAwQGACgAAAADBAYAKAAAAAMECAAoAAAAAwIIAGgAAAADAQEHACgAAAADAwYAKAAAAAMECAAoAAAAAwIGIDQAAAABAQQHAGgAAAADAgEGACgAAAADBAgAKAAAAAMCBgAoAAAAAwQHACgAAAADAwgAaAAAAAMBAQZAKAAAAAMEBkBoAAAAAwMBEEAoAAAAAwIGQCgAAAADBAcAaAAAAAMBAgdAKAAAAAMDBiA0AAAAAQEEEAAgAAAAAgYAYAAAAAICCwABKAIBAiACAygCAwQgBAUoAgQGIAMHIAcIIAgJKAIICgAKCwALDCAMDSgCDA4kBA4PKgICAgwQDxAkAw4RIBESaAwSE2gMExRoDBQVIBQWaAwKFwAXGAAYGQAZAgAXBwAWEWgMQgMAAAAGAhkYFwcDBAgKFwcFEhEWFBMXCQAAAAAAAAA/AAAAABICAAAAAAATOrUAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAABhdG9tTm90ZQAEAAAAMi42NAAAAAAAAAAAAAABAAgAAABfQ0lQQ29kZQABAAAAUggBAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAA5LjkwAAAAAAAAAAAAAAAAAAAAAAEACAAAAGF0b21Ob3RlAAQAAAAzLjIyAAEACAAAAF9DSVBDb2RlAAEAAABSCAEAAAAAAAAAExY=" data-parent-node="div[class*=jp-NotebookPanel-notebook]" data-width="300" id="rdk-str-rnr-mol-72429b1c-8e68-11f0-96f2-80e82cd30f44" style="margin: auto;"></div></td></tr></tbody></table><script type="module">if (window.rdkStrRnr) {
   window.rdkStrRnr.then(
     function(Renderer) {
       if (Renderer) {
@@ -9002,7 +9262,7 @@ Atoms and bonds can be selected by mouse clicks...</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">atom_bond_selection</span><span class="o">.</span><span class="n">atoms</span><span class="p">()</span>
@@ -9016,7 +9276,7 @@ Atoms and bonds can be selected by mouse clicks...</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[47]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>[23, 7, 8]</pre>
 </div>
@@ -9028,7 +9288,7 @@ Atoms and bonds can be selected by mouse clicks...</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">atom_bond_selection</span><span class="o">.</span><span class="n">bonds</span><span class="p">()</span>
@@ -9042,14 +9302,14 @@ Atoms and bonds can be selected by mouse clicks...</p>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>[26, 7]</pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=633cd793-f5b8-48af-b47e-4ebc1435fa1e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=73665f60-1f35-4fc2-ad30-df7c51eda920">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
